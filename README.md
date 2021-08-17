@@ -69,6 +69,7 @@ Or use the ENV variables:
     ENV['SLACK_APPLICATION'] = ''
 
     # optional
+    ENV['SLACK_STAGE'] = ''
     ENV['SLACK_USERNAME'] = ''
     ENV['SLACK_EMOJI'] = ''
 
