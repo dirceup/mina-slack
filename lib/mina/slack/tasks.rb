@@ -7,9 +7,9 @@ require 'mina'
 # Slack tasks
 namespace :slack do
   # Required
-  set :slack_token,       -> { ENV['SLACK_TOKEN'] || fetch(:slack_token) }
-  set :slack_room,        -> { ENV['SLACK_ROOM'] || fetch(:slack_room) }
-  set :slack_subdomain,   -> { ENV['SLACK_SUBDOMAIN'] || fetch(:slack_subdomain) }
+  set :slack_token,       -> { ENV['SLACK_TOKEN'] || fetch(:slack_env_token) }
+  set :slack_room,        -> { ENV['SLACK_ROOM'] || fetch(:slack_env_room) }
+  set :slack_subdomain,   -> { ENV['SLACK_SUBDOMAIN'] || fetch(:slack_env_subdomain) }
   # Optional
   set :slack_stage,       -> { ENV['SLACK_STAGE'] || fetch(:rails_env, 'production') }
   set :slack_application, -> { ENV['SLACK_APPLICATION'] || fetch(:application_name) }
