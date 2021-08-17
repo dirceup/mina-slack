@@ -11,7 +11,7 @@ namespace :slack do
   set :slack_room,        -> { ENV['SLACK_ROOM'] || fetch(:slack_env_room) }
   set :slack_subdomain,   -> { ENV['SLACK_SUBDOMAIN'] || fetch(:slack_env_subdomain) }
   # Optional
-  set :slack_stage,       -> { ENV['SLACK_STAGE'] || fetch(:rails_env, 'production') }
+  set :slack_stage,       -> { ENV['SLACK_STAGE'] || fetch(:slack_env_stage) || fetch(:rails_env, 'production') }
   set :slack_application, -> { ENV['SLACK_APPLICATION'] || fetch(:application_name) }
   set :slack_username,    -> { ENV['SLACK_USERNAME'] || 'deploybot' }
   set :slack_emoji,       -> { ENV['SLACK_EMOJI'] || ':cloud:' }
