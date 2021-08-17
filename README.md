@@ -49,7 +49,7 @@ end
 
 
 ### Setup Slack Details
-You'll need to setup your slack details with an API key, room and subdomain. You can add these as ENV variables or in the config/deploy.rb
+You'll need to setup your Slack details with an API key, room and subdomain. You can add these as ENV variables or in the `config/deploy/environment.rb`
 
     # required
     set :slack_env_token, "webhook_token" # comes from inbound webhook integration
