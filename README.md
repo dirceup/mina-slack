@@ -66,9 +66,9 @@ Or use the ENV variables:
     ENV['SLACK_TOKEN'] = ''
     ENV['SLACK_ROOM'] = ''
     ENV['SLACK_SUBDOMAIN'] = ''
+    ENV['SLACK_APPLICATION'] = ''
 
     # optional
-    ENV['SLACK_APPLICATION'] = ''
     ENV['SLACK_USERNAME'] = ''
     ENV['SLACK_EMOJI'] = ''
 
