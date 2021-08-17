@@ -58,9 +58,7 @@ You'll need to setup your slack details with an API key, room and subdomain. You
     set :application_name, "Example"
     
     # optional
-    set :slack_application, "Application Name" # override Capistrano `application`
-    set :slack_username, "Deploy Bot" # displayed as name of message sender
-    set :slack_emoji, ":cloud:" # will be used as the avatar for the message
+    set :slack_env_stage, "staging"
 
 Or use the ENV variables:
 
